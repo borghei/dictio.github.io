@@ -1,0 +1,286 @@
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		5.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Sep 01, 2017
+*	Website:		             http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (WFSFA)
+--------------------------------------------------------------------------------------
+*
+**/
+/*
+Use https://bennettfeely.com/clippy for generating clip-paths automatically
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'yekan';
+    src:  url('IRANSans_Light.ttf') format('truetype');
+}
+
+body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    font-family: 'yekan' !important;
+    color: #777;
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#stripes {
+	height: 100%;
+	background: linear-gradient(150deg, #53f 15%, #05d5ff 70%, #a6ffcb 94%);
+	-webkit-clip-path: polygon(100% 0, 100% 70%, 0 99%, 0 0);
+	        clip-path: polygon(100% 0, 100% 70%, 0 99%, 0 0);
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+
+#stripes :nth-child(1) {
+	grid-area: 1 / 1 / span 4 / span 2;
+	background-color: #53f;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+	        clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+
+#stripes :nth-child(2) {
+	grid-area: 1 / 3 / span 3 / span 2;
+	background-color: #4553ff;
+	-webkit-clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+	        clip-path: polygon(0 0, 100% 0%, 100% 74%, 0% 100%);
+	-webkit-transform: translateY(-30px);
+	        transform: translateY(-30px);
+}
+
+#stripes :nth-child(3) {
+	grid-area: 1 / 5 / span 2 / span 2;
+	background-color: #4f40ff;
+	-webkit-clip-path: polygon(0 0, 100% 0, 99% 5%, 0 70%);
+	        clip-path: polygon(0 0, 100% 0, 99% 5%, 0 70%);
+}
+
+#stripes :nth-child(4) {
+	grid-area: 3 / 11 / span 3 / span 2;
+	-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
+	        clip-path: polygon(0 23%, 100% 0%, 100% 77%, 0% 100%);
+	background-color: #0dcfff;
+}
+
+#stripes :nth-child(5) {
+	grid-area: 8 / 1 / span 5 / span 4;
+	-webkit-clip-path: polygon(0 23%, 100% 0%, 100% 80%, 0% 100%);
+	        clip-path: polygon(0 23%, 100% 0%, 100% 80%, 0% 100%);
+	-webkit-transform: translateY(10px);
+	        transform: translateY(10px);
+	background-color: #1fa2ff;
+}
+
+#email{
+	text-decoration: none !important;
+	color: black !important;
+}
+#version{
+	text-decoration: none !important;
+	color: #15dcf6 !important;
+	margin: 0px !important;
+}
+#link{
+	text-decoration: none !important;
+	color: white !important;
+	margin: 0px !important;
+}
+
+h1 {
+	color: white;
+	position: absolute;
+	top: 10px;
+	margin: 10px;
+	font-size: 32px;
+}
+.logo{
+	width: 20%;
+}
+
+
+.tr{
+	background-color: red;
+}
+.tg{
+	background-color: green;
+}
+.tb{
+	background-color: blue;
+}
+.full-height{
+	height: 100%;
+}
+.full-width{
+	width: 100%;
+}
+.z-top{
+	z-index: 10;
+}
+.z-top1{
+	z-index: 11;
+}
+.z-top2{
+	z-index: 12;
+}
+.posab{
+	position: absolute;
+}
+.main-grid{
+	top: 15%;
+	height: 85%;
+}
+.vgrid-1{
+height: 100%;
+}
+
+.khar{
+	height: 20%;
+	text-align: center !important;
+	color: white;
+}
+.container{
+	display: inline-block;
+}
+
+.form-wrapper {
+		background: #444;
+		background: rgba(0,0,0,.2);
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+		border-radius: 10px;
+		-moz-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+		-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+		box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+}
+
+
+@media only screen and (min-width: 200px) and (max-width:299px){
+	.logo{
+		width: 20%;
+	}
+	.gav{
+		margin-right: 10%;
+		float: right;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		color: white;
+	}
+	.goosale{
+		margin-left: 10%;
+		float: left;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		color: white;
+	}
+}
+@media only screen and (min-width: 300px) and (max-width:450px){
+	.logo{
+		width: 20%;
+	}
+	.gav{
+		margin-right: 15%;
+		float: right;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		color: white;
+
+	}
+	.goosale{
+		margin-left: 15%;
+		float: left;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+		color: white;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+	.logo{
+		width: 10%;
+	}
+	.gav{
+		margin-right: 18%;
+		float: right;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		color: white;
+	}
+	.goosale{
+		margin-left: 18%;
+		float: left;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		color: white;
+	}
+}
+
+@media only screen and (min-width: 1028px){
+	.logo{
+		width: 10%;
+	}
+	.gav{
+		margin-right: 30%;
+		float: right;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		color: white;
+	}
+	.goosale{
+		margin-left: 30%;
+		float: left;
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		color: white;
+	}
+}
+
+.footer{
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	z-index: 13;
+	height: 10%;
+	bottom: 0px;
+	left:0px;
+	text-align: center;
+	color: black;
+}
+
+.footer-li{
+	padding: 5px;
+	margin: 10px;
+}
+
+.version{
+	color: #15dcf6;
+	background-color:white;
+	border-radius: 10px;
+}
